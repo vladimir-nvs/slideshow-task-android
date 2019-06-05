@@ -1,7 +1,6 @@
 # Android Slideshow task
 
-Your task is to develop a simple Android APP that fetches media files, images and videos, from public S3 buckets.  
-The app should display media items in a slideshow with cross-fade transitions.
+Your task is to develop a simple Android APP that fetches and iterate over media files (images and videos) from public S3 buckets. The app should display media items in a slideshow with cross-fade transitions.
 
 ##### What we anticipate to see in the  app:
 
