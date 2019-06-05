@@ -14,6 +14,7 @@ The app should display media items in a slideshow with cross-fade transitions.
 
 ##### Questions:
 Answer the question in an Answers.txt file
+
 How would you check for update and fetch media and load it in the background without stopping the slideshow run?
 
 # Good luck!
