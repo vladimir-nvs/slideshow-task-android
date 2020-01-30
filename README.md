@@ -38,6 +38,7 @@ https://test.onsignage.com/PlayerBackend/creative/get/2abbf8c1-396d-4fac-9a68-82
 ### Bonus 
 Check for playlist updates and display accordingly, without starting it over again.
 
+### Last thing
 ##### What we anticipate to see in the  app:
 
 1. Write the app with Java / Kotlin / etc.
