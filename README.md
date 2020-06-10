@@ -1,6 +1,6 @@
 # Android Slideshow task
 
-Your task is to develop a simple Android APP that fetches and iterate over media files (images and videos) from NoviSign API. The app should display media items in a slideshow with cross-fade transitions and display duration.
+Your task is to develop a simple Android APP that fetches and iterate over media files (images and videos) from NoviSign API. The app should display media items in a slideshow with cross-fade transitions and display duration in a loop.
 
 #### NoviSign api
 1. Get playlist:
