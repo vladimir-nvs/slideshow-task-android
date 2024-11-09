@@ -36,7 +36,7 @@ E.g:
 https://test.onsignage.com/PlayerBackend/creative/get/2abbf8c1-396d-4fac-9a68-820c1abc6d96.png
 ```
 ### Bonus 
-Check for playlist updates and display accordingly, without starting it over again.
+Check for playlist updates and display accordingly, without downloading unmodified items again.
 
 ### Last thing
 ##### What we anticipate to see in the  app:
