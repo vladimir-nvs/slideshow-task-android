@@ -35,23 +35,23 @@ E.g:
 ```
 https://test.onsignage.com/PlayerBackend/creative/get/2abbf8c1-396d-4fac-9a68-820c1abc6d96.png
 ```
+
 ### Bonus 
 Check for playlist updates and display accordingly, without downloading unmodified items again.
 
-### Last thing
 ##### What we anticipate to see in the  app:
 
 1. Write the app with Java / Kotlin.
-2. Write unit tests
-3. Use design patterns that allows flexible code structure, showing anticipation for evolution and new features 
-4. Cut corners, but not to the point where the structure vanishes
-5. Conventional coding style
-6. README file and reasonable comments (where needed)
-7. Upload project files to public GitHub repository
+2. Using AI tools - big advantage. But you need to know what are changes implemented by AI tool.
+3. Write unit tests
+4. Use design patterns that allows flexible code structure, showing anticipation for evolution and new features 
+5. Cut corners, but not to the point where the structure vanishes
+6. Conventional coding style
+7. README file and reasonable comments (where needed)
+8. Upload project files to public GitHub repository
 
 ##### Question:
 How would you have implement the Bonus question? (If you hadn't implemented it :) )
-
 Answer the question in an answers.txt file
 
 # Good luck!
