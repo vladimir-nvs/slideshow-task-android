@@ -1,57 +1,53 @@
 # Android Slideshow task
 
-Your task is to develop a simple Android app that fetches and iterate over media files (images and videos) from NoviSign API. The app should display media items in a slideshow in a loop, with cross-fade transitions and display duration.
+Develop a simple Android app that plays media in a slideshow.
 
-#### NoviSign api
-1. Get playlist:
+The application should fetch playlist metadata and download images and videos from the server.
+The media should be played in a loop with cross-fade transitions according to the duration in the metadata.
+When playing offline, the app should be able to play the last downloaded playlist.
+The app should periodically check for playlist changes (e.g. once per minute by default), download media in the background if needed, and play the modified playlist after a successful update.
 
-Inorder to get the  media files you need to fetch 'playlists' and extract the media files to display over the screen.
-- The playlist might be empty.
-- There can be more then one playlist.
-- In your app you can use the following key:
-```
-https://test.onsignage.com/PlayerBackend/screen/playlistItems/e490b14d-987d-414f-a822-1e7703b37ce4
-```
-Response E.g:
-```JSON
-{
-  "screenKey": "e490b14d-987d-414f-a822-1e7703b37ce4",
-  "breakpointInterval": 0,
-  "playlists": [
-    {
-      "channelTime": 0,
-      "playlistItems": [
-        "fileKey": "62ee6d0f-e058-43ce-907c-4133f12999c1.jpg"
-      ]
-    }
-  ]
-}
+#### User input
+
+- The application should allow the user to enter a screen key.
+- The user should be able to start and stop the playlist, and skip the current playback item.
+- Screen key for testing: `7d47b6d7-8294-4b33-8887-066961d79993` — set it as the default on first launch
+
+#### Server API
+
+The API root URL is `https://test.onsignage.com/PlayerBackend/`
+
+1. `screen/playlistItems` endpoint provides one or more playlists containing media item (creative) descriptor entries.
+
+```text
+screen/playlistItems/{screenKey}
 ```
 
-2. Get media files:
+- The playlist might be empty
+- There can be more than one playlist
+- Figure out which fields are useful and ignore response fields that are irrelevant for this task
 
-In order to recieve the media file you should call NoviSign's API with the relevant file key.
-E.g:
+2. `creative/get` endpoint serves a media file by `creativeKey`
 ```
-https://test.onsignage.com/PlayerBackend/creative/get/2abbf8c1-396d-4fac-9a68-820c1abc6d96.png
+creative/get/{creativeKey}
 ```
 
-### Bonus 
-Check for playlist updates and display accordingly, without downloading unmodified items again.
+##### What we anticipate
 
-##### What we anticipate to see in the  app:
+- No clarification questions are expected:
+  - Deriving *reasonable* details from the description is part of the assessment
+  - If in doubt, make sane assumptions and document them
+  - Let realistic app usage guide your decisions
+- Java / Kotlin
+- Use of AI tools is encouraged, provided that:
+  - You should be able to explain the solution
+  - You fully understand and stand behind any part of the generated code
+  - You are able to quickly make changes to the generated code manually
+- Efficient playlist and media updates
+- Unit test coverage
+- Use design patterns that allow flexible code structure, showing anticipation for evolution, new features, and configuration changes
+- Cut corners (don't overcomplicate), but not to the point where the structure or architectural separation vanishes
+- Conventional coding style
+- README file, and reasonable code comments where appropriate
 
-1. Write the app with Java / Kotlin.
-2. Using AI tools - big advantage. But you need to know what are changes implemented by AI tool.
-3. Write unit tests
-4. Use design patterns that allows flexible code structure, showing anticipation for evolution and new features 
-5. Cut corners, but not to the point where the structure vanishes
-6. Conventional coding style
-7. README file and reasonable comments (where needed)
-8. Upload project files to public GitHub repository
-
-##### Question:
-How would you have implement the Bonus question? (If you hadn't implemented it :) )
-Answer the question in an answers.txt file
-
-# Good luck!
+### Good luck!
